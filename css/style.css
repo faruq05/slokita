@@ -115,8 +115,8 @@ p {
     color: var(--cs-orange);
 }
 
-.nav-link:hover{
-    color: var(--cs-orange)!important;
+.nav-link:hover {
+    color: var(--cs-orange) !important;
 }
 
 .navbar-toggler i {
@@ -213,6 +213,25 @@ p {
     width: 27%;
 }
 
+.horz-move {
+    -webkit-animation: rocketanimation 5s infinite alternate;
+    animation: rocketanimation 5s infinite alternate;
+}
+
+@keyframes rocketanimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* banner ends----------------------- */
 
 /* Partner starts----------------------- */
@@ -303,6 +322,31 @@ p {
 /* tokenomics ends------------------------ */
 
 /* roadmap starts---------------------- */
+.vert-move {
+    -webkit-animation: floating 1s infinite alternate;
+    animation: floating 1s infinite alternate;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@-webkit-keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
 .phase1 {
     color: #FF5546;
 }
@@ -399,7 +443,7 @@ p {
     gap: 25px;
 }
 
-.footer_content a h5:hover{
+.footer_content a h5:hover {
     color: var(--cs-orange);
 }
 
@@ -414,11 +458,12 @@ p {
     transition: .2s all ease-in-out, .2s all ease-in-out;
 }
 
-.social_icon li:hover{
+.social_icon li:hover {
     transform: scale(1.2);
 }
 
 .footer_images {
     text-align: end;
 }
+
 /* footer ends */
